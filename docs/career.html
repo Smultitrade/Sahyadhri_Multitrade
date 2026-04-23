@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers – Sahyadhri Multitrade Pvt. Ltd.</title>
+    <link rel="stylesheet" href="css/career.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ======= NAVBAR ======= -->
+<nav class="navbar-container" id="navbar">
+    <div class="navbar-inner">
+        <div class="logo">
+            <img src="images/sahyadhri.png" alt="Sahyadhri Logo">
+            <span class="logo-name">SAHYADHRI MULTITRADE PVT. LTD.</span>
+        </div>
+        <ul class="desktop-nav">
+            <li><a href="index.html">Company</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="career.html" class="active">Career</a></li>
+        </ul>
+        <a href="contact.html" class="nav-contact-btn">Contact us</a>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <ul>
+        <li><a href="index.html">Company</a></li>
+        <li><a href="index.html#about">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+    </ul>
+</div>
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+<!-- Floating Contact Buttons -->
+<div class="float-contact">
+    <a href="tel:+918108911104" class="float-btn float-phone" title="Call Us"><i class="fa fa-phone"></i></a>
+    <a href="mailto:operation@smtpl.net.in" class="float-btn float-mail" title="Email Us"><i class="fa fa-envelope"></i></a>
+    <a href="https://wa.me/918108911104" target="_blank" class="float-btn float-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<!-- ======= HERO ======= -->
+<header class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-tag">Join Our Team</div>
+        <h1 class="hero-title">Build Your <span class="hero-accent">Career</span></h1>
+        <p class="hero-desc">Be part of a driven team shaping India's scrap industry — where professionalism meets purpose.</p>
+    </div>
+</header>
+
+<!-- ======= PERKS STRIP ======= -->
+<div class="perks-strip">
+    <div class="perk-item">
+        <i class="fa fa-users"></i>
+        <span>Collaborative Team</span>
+    </div>
+    <div class="perk-divider"></div>
+    <div class="perk-item">
+        <i class="fa fa-chart-line"></i>
+        <span>Growth Opportunities</span>
+    </div>
+    <div class="perk-divider"></div>
+    <div class="perk-item">
+        <i class="fa fa-briefcase"></i>
+        <span>Industry Exposure</span>
+    </div>
+    <div class="perk-divider"></div>
+    <div class="perk-item">
+        <i class="fa fa-star"></i>
+        <span>Performance Culture</span>
+    </div>
+</div>
+
+<!-- ======= APPLICATION FORM ======= -->
+<section class="form-section">
+    <div class="form-wrapper">
+        <div class="form-right">
+            <div class="section-tag">Apply Now</div>
+            <h2 class="form-heading">Send Your <span class="accent">Application</span></h2>
+            <div class="heading-bar"></div>
+
+            <form class="apply-form" id="careerForm" onsubmit="handleSubmit(event)">
+
+                <div class="form-row full">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-row split">
+                    <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required>
+                </div>
+                <div class="form-row full">
+                    <input type="text" id="position" name="position" placeholder="Position / Role Applying For">
+                </div>
+                <div class="form-row full">
+                    <textarea name="message" id="message" placeholder="Tell us about yourself..." rows="4"></textarea>
+                </div>
+                <div class="form-row upload-row">
+                    <span class="upload-text">Upload Resume</span>
+                    <label class="file-btn" for="resumeInput">Choose File</label>
+                    <input type="file" id="resumeInput" name="attachment" accept=".pdf,.doc,.docx" onchange="showFileName(this)">
+                    <span class="file-name" id="fileName">No file chosen</span>
+                </div>
+
+                <!-- Status messages -->
+                <div id="formStatus" style="display:none; margin-bottom: 12px; font-size: 14px; font-weight: 600; padding: 10px 16px; border-radius: 6px;"></div>
+
+                <div class="form-row full">
+                    <button type="submit" class="submit-btn" id="careerSubmitBtn">SUBMIT APPLICATION</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer-outer-wrapper">
+    <div class="footer-container">
+        <div class="footer-main">
+            <div class="footer-col brand">
+                <div class="brand-header">
+                    <img src="images/sahyadhri.png" alt="Logo" class=   "f-logo">
+                    <h2 class="f-title">SAHYADHRI MULTITRADE PVT. LTD.</h2>
+                </div>
+                <p class="f-desc">Trusted name in the scrap industry, providing reliable solutions for scrap sourcing, processing, and supply chain operations across India.</p>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Company</a></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="career.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h3>Contact Address</h3>
+                <p class="address"><i class="fa fa-location-dot"></i> Office No 115, Plot No 84, Vardhaman Chamber, Wing B, Sector – 17, Vashi, Navi Mumbai – 400703</p>
+                <h3>Contact Person</h3>
+                <div class="contact-persons">
+                    <div class="person">
+                        <p>Mr. Ajay Shirshad</p>
+                        <a href="tel:+918108911104" class="contact-link"><i class="fa fa-phone"></i> +91 81089 11104</a>
+                    </div>
+                    <div class="person">
+                        <p>Mr. Sachin Panmand</p>
+                        <a href="tel:+918108044454" class="contact-link"><i class="fa fa-phone"></i> +91 81080 44454</a>
+                    </div>
+                </div>
+                <a href="mailto:operation@smtpl.net.in" class="email-link"><i class="fa fa-envelope"></i> operation@smtpl.net.in</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyrights © 2026 Sahyadhri Multitrade Pvt. Ltd. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+// Drawer
+var drawer = document.getElementById('mobileDrawer');
+var backdrop = document.getElementById('drawerBackdrop');
+var burger = document.getElementById('hamburger');
+var closeBtn = document.getElementById('drawerClose');
+burger.addEventListener('click', function() { drawer.classList.add('open'); backdrop.classList.add('open'); document.body.style.overflow = 'hidden'; });
+function closeDrawer() { drawer.classList.remove('open'); backdrop.classList.remove('open'); document.body.style.overflow = ''; }
+closeBtn.addEventListener('click', closeDrawer);
+backdrop.addEventListener('click', closeDrawer);
+
+// Navbar scroll
+window.addEventListener('scroll', function() { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60); });
+
+// File name
+function showFileName(input) {
+    document.getElementById('fileName').textContent = input.files.length ? input.files[0].name : 'No file chosen';
+}
+
+// Form submit
+async function handleSubmit(e) {
+    e.preventDefault();
+    var btn = document.getElementById('careerSubmitBtn');
+    var status = document.getElementById('formStatus');
+    var form = document.getElementById('careerForm');
+
+    // Validate file size — max 5MB
+    var resumeFile = document.getElementById('resumeInput').files[0];
+    if (resumeFile && resumeFile.size > 5 * 1024 * 1024) {
+        status.style.display = 'block';
+        status.style.background = '#f8d7da';
+        status.style.color = '#721c24';
+        status.textContent = '✗ Resume must be under 5MB. Please compress it and try again.';
+        return;
+    }
+
+    btn.textContent = 'Submitting...';
+    btn.disabled = true;
+    status.style.display = 'none';
+
+    try {
+        // Build FormData — browser sets correct multipart headers automatically
+        var formData = new FormData();
+        formData.append('name',     document.getElementById('name').value);
+        formData.append('email',    document.getElementById('email').value);
+        formData.append('phone',    document.getElementById('phone').value);
+        formData.append('position', document.getElementById('position').value);
+        formData.append('message',  document.getElementById('message').value);
+        if (resumeFile) {
+            formData.append('resume', resumeFile);
+        }
+
+        // ← Change this URL to your Render URL after deployment
+        var API_URL = 'http://localhost:5000/api/career';
+
+        var response = await fetch(API_URL, {
+            method: 'POST',
+            body: formData
+            // DO NOT set Content-Type header — browser sets it automatically for FormData
+        });
+
+        var result = await response.json();
+
+        if (result.success) {
+            status.style.display = 'block';
+            status.style.background = '#d4edda';
+            status.style.color = '#155724';
+            status.textContent = '✓ Application submitted! We will review your profile and get in touch.';
+            btn.textContent = '✓ Application Submitted!';
+            btn.classList.add('submitted');
+            form.reset();
+            document.getElementById('fileName').textContent = 'No file chosen';
+            setTimeout(function() {
+                btn.textContent = 'SUBMIT APPLICATION';
+                btn.classList.remove('submitted');
+                btn.disabled = false;
+                status.style.display = 'none';
+            }, 4000);
+        } else {
+            throw new Error(result.message || 'Submission failed');
+        }
+
+    } catch (error) {
+        status.style.display = 'block';
+        status.style.background = '#f8d7da';
+        status.style.color = '#721c24';
+        status.textContent = '✗ Something went wrong. Please try again or email us directly.';
+        btn.textContent = 'SUBMIT APPLICATION';
+        btn.disabled = false;
+    }
+}
+
+// GSAP
+gsap.registerPlugin(ScrollTrigger);
+gsap.from('#navbar', { y: -70, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.1 });
+gsap.from('.hero-tag',   { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.4 });
+gsap.from('.hero-title', { y: 60, opacity: 0, duration: 1,   ease: 'power4.out', delay: 0.6 });
+gsap.from('.hero-desc',  { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.9 });
+gsap.from('.perk-item',  { scrollTrigger: { trigger: '.perks-strip', start: 'top 90%' }, y: 30, opacity: 0, duration: 0.6, ease: 'power3.out', stagger: 0.1 });
+gsap.from('.form-right', { scrollTrigger: { trigger: '.form-wrapper', start: 'top 82%' }, x: 60,  opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.1 });
+gsap.from('.float-contact', { x: 80, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 1.2 });
+</script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services – Sahyadhri Multitrade Pvt. Ltd.</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar-container">
+    <div class="navbar-pill">
+
+        <div class="logo">
+            <img src="images/sahyadhri.png" alt="Sahyadhri Logo">
+        </div>
+
+        <!-- Desktop links (hidden on mobile) -->
+        <ul class="desktop-nav">
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="home.html#about">About us</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="career.html">Career</a></li>
+        </ul>
+
+        <a href="contact.html" class="contact-btn">Contact us</a>
+
+        <!-- Hamburger (visible only on mobile) -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</nav>
+
+<!-- ======= MOBILE DRAWER (completely separate from navbar) ======= -->
+<div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <ul>
+        <li><a href="home.html" onclick="closeDrawer()">Home</a></li>
+        <li><a href="home.html#about" onclick="closeDrawer()">About us</a></li>
+        <li><a href="services.html" onclick="closeDrawer()">Services</a></li>
+        <li><a href="career.html" onclick="closeDrawer()">Career</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+    </ul>
+</div>
+
+<!-- Dark backdrop -->
+<div class="drawer-backdrop" id="drawerBackdrop" onclick="closeDrawer()"></div>
+
+<!-- ===== HERO ===== -->
+<header class="services-hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/Service_banner.jpg">
+        <source src="" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">SERVICES</h1>
+        <p class="hero-desc">Sahyadhri Multitrade Pvt Ltd provides integrated scrap supply chain and logistics solutions, including transportation (FTL/PTL), material sorting, grading, and processing. We ensure smooth handling and efficient conversion of scrap into reusable resources through a well-managed supply chain.</p>
+    </div>
+</header>
+
+<!-- ===== INTEGRATED SCRAP SUPPLY CHAIN ===== -->
+<section class="issc-section">
+    <div class="section-inner">
+        <h2 class="section-heading">Integrated Scrap Supply Chain Solutions</h2>
+        <div class="heading-bar"></div>
+
+        <div class="service-cards">
+
+            <div class="service-card">
+                <div class="card-img-wrap">
+                    <img src="images/solution_1.jpg" alt="Scrap Supply Chain & Logistics">
+                </div>
+                <div class="card-text">
+                    <h3>Scrap Supply Chain &amp; Logistics</h3>
+                    <p>Efficient management of GTA, PTL, and FTL movements ensures timely and reliable transportation of scrap materials across diverse locations, supporting smooth industrial operations.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrap">
+                    <img src="images/solution_2.jpg" alt="Sorting & Grading">
+                </div>
+                <div class="card-text">
+                    <h3>Sorting &amp; Grading</h3>
+                    <p>We systematically separate ferrous, non-ferrous, and TMT scrap materials based on type and quality, ensuring high standards and optimal usability for further processing.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrap">
+                    <img src="images/solution_3.jpg" alt="Processing & Material Preparation">
+                </div>
+                <div class="card-text">
+                    <h3>Processing &amp; Material Preparation</h3>
+                    <p>Our advanced processing methods include cleaning, shredding, and preparing materials for reuse, helping transform industrial scrap into valuable resources for manufacturing.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== WE DEAL IN ===== -->
+<section class="deal-section">
+    <div class="section-inner">
+        <h2 class="section-heading dark">WE DEAL IN</h2>
+        <div class="heading-bar"></div>
+        <p class="section-sub">We deal in a comprehensive range of ferrous and non-ferrous scrap materials, delivering quality products to support diverse industrial and manufacturing requirements. Explore the range of metal scrap categories we specialize in below.</p>
+
+        <div class="deal-slider-wrapper">
+            <button class="deal-btn prev" id="dealPrev" aria-label="Previous">&#10094;</button>
+
+            <div class="deal-slider-window">
+                <div class="deal-track" id="dealTrack">
+
+                    <!-- Slide 1: items 1-4 -->
+                    <div class="deal-slide">
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/thermo.jpg" alt="TMT Scrap"></div>
+                            <p>Thermo-Mechanically Treated Scrap (TMT)</p>
+                        </div>
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/shred.jpg" alt="Shredded Scrap"></div>
+                            <p>Shredded Scrap</p>
+                        </div>
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/ingot.jpg" alt="Ingot Scrap"></div>
+                            <p>Ingot Scrap</p>
+                        </div>
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/punch.jpg" alt="Punching"></div>
+                            <p>Punching</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: items 5-8 -->
+                    <div class="deal-slide">
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/CRC_bundle.jpg" alt="CRS Bundle"></div>
+                            <p>CRS Bundle</p>
+                        </div>
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/pns.jpg" alt="PNS Scrap"></div>
+                            <p>PNS Scrap</p>
+                        </div>
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/end_cuts.jpg" alt="End Cuts"></div>
+                            <p>End Cuts</p>
+                        </div>
+                        <div class="deal-card">
+                            <div class="deal-img"><img src="images/rail.jpg" alt="Rail Scrap"></div>
+                            <p>Rails Scrap</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="deal-btn next" id="dealNext" aria-label="Next">&#10095;</button>
+        </div>
+
+        <div class="deal-dots">
+            <span class="ddot active" onclick="goToSlide(0)"></span>
+            <span class="ddot" onclick="goToSlide(1)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="why-section">
+    <div class="section-inner">
+        <h2 class="section-heading dark">WHY CHOOSE US?</h2>
+        <div class="heading-bar"></div>
+        <p class="section-sub">At Sahyadhri Multitrade Pvt Ltd, we are committed to delivering reliable, efficient, and technology-driven supply chain solutions. With decades of experience in logistics, scrap trading, and transportation, we ensure every service is backed by trust, precision, and operational excellence.</p>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <div class="why-img">
+                    <img src="images/wcu1.jpg" alt="GPS Tracking">
+                </div>
+                <h4>GPS Tracking</h4>
+                <p>We continuously track and monitor the movement of consignment</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-img">
+                    <img src="images/wcu2.jpg" alt="Warehousing">
+                </div>
+                <h4>Warehousing</h4>
+                <p>We have well designed capacious warehouses</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-img">
+                    <img src="images/wcu3.jpg" alt="Maintenance & Garage">
+                </div>
+                <h4>Maintenance &amp; Garage</h4>
+                <p>We have our own maintenance team of mechanics and garage available 24/7</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-img">
+                    <img src="images/wcu4.jpg" alt="FTL Vehicles">
+                </div>
+                <h4>FTL Vehicles</h4>
+                <p>We have owned our container body for dedicated movement with digital locking system</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-outer-wrapper">
+    <div class="footer-container">
+        <div class="footer-main">
+            <div class="footer-col brand">
+                <div class="brand-header">
+                    <img src="logo.png" alt="Sahyadhri Logo" class="f-logo">
+                    <h2 class="f-title">SAHYADHRI MULTITRADE PVT. LTD.</h2>
+                </div>
+                <p class="f-desc">Sahyadhri Multitrade Pvt. Ltd. is a trusted name in supply chain solutions, scrap trading, and logistics services. With over 30 years of experience, we are committed to delivering reliable, efficient, and customer-focused solutions across India.</p>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#career">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h3>Contact Address</h3>
+                <p class="address">Office No 115, Plot No 84, Vardhaman Chamber, Wing B, Sector – 17, Vashi, Navi Mumbai – 400703</p>
+                <h3>Contact Person</h3>
+                <div class="contact-persons">
+                    <div class="person">
+                        <p>Mr. Ajay Shirshad</p>
+                        <a href="tel:+918108911104" class="contact-link"><span class="icon">📞</span> +91 81089 11104</a>
+                    </div>
+                    <div class="person">
+                        <p>Mr. Sachin Panmand</p>
+                        <a href="tel:+918108044454" class="contact-link"><span class="icon">📞</span> +91 81080 44454</a>
+                    </div>
+                </div>
+                <a href="mailto:operation@smtpl.net.in" class="email-link"><span class="icon">✉️</span> operation@smtpl.net.in</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyrights © 2026 Sahyadhri Multitrade Pvt. Ltd. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ── MOBILE DRAWER ──────────────────────────────────────
+var drawer   = document.getElementById('mobileDrawer');
+var backdrop = document.getElementById('drawerBackdrop');
+var burger   = document.getElementById('hamburger');
+var closeBtn = document.getElementById('drawerClose');
+
+burger.addEventListener('click', function() {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+});
+
+function closeDrawer() {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+closeBtn.addEventListener('click', closeDrawer);
+
+// Anchor links inside drawer — close then scroll
+drawer.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = this.getAttribute('href');
+        closeDrawer();
+        setTimeout(function() {
+            var el = target === '#' ? document.body : document.querySelector(target);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+    });
+});
+
+// ===== DEAL SLIDER =====
+let dealIndex = 0;
+const dealTotal = 2;
+
+function goToSlide(i) {
+    dealIndex = i;
+    updateDeal();
+}
+
+document.getElementById('dealPrev').addEventListener('click', () => {
+    dealIndex = (dealIndex - 1 + dealTotal) % dealTotal;
+    updateDeal();
+});
+document.getElementById('dealNext').addEventListener('click', () => {
+    dealIndex = (dealIndex + 1) % dealTotal;
+    updateDeal();
+});
+
+function updateDeal() {
+    document.getElementById('dealTrack').style.transform = `translateX(-${dealIndex * 100}%)`;
+    document.querySelectorAll('.ddot').forEach((d, i) => d.classList.toggle('active', i === dealIndex));
+}
+</script>
+<!-- GSAP + ScrollTrigger -->
+</body>
+</html>

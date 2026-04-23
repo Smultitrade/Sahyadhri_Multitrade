@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahyadhri Multitrade Pvt. Ltd.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ======= NAVBAR ======= -->
+<nav class="navbar-container" id="navbar">
+    <div class="navbar-inner">
+        <div class="logo">
+            <img src="images/sahyadhri.png" alt="Sahyadhri Logo">
+            <span class="logo-name">SAHYADHRI MULTITRADE PVT. LTD.</span>
+        </div>
+        <ul class="desktop-nav">
+            <li><a href="#" class="active">Company</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#career">Career</a></li>
+        </ul>
+        <a href="contact.html" class="nav-contact-btn">Contact us</a>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <ul>
+        <li><a href="#" onclick="closeDrawer()">Company</a></li>
+        <li><a href="#about" onclick="closeDrawer()">About us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#career" onclick="closeDrawer()">Career</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+    </ul>
+</div>
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+<!-- ======= FLOATING CONTACT BUTTONS ======= -->
+<div class="float-contact">
+    <a href="tel:+918108911104" class="float-btn float-phone" title="Call Us">
+        <i class="fa fa-phone"></i>
+    </a>
+    <a href="mailto:operation@smtpl.net.in" class="float-btn float-mail" title="Email Us">
+        <i class="fa fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/918108911104" target="_blank" class="float-btn float-wa" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- ======= HERO ======= -->
+<header class="hero-section">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="images/Hero_Section_1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-tag gsap-fade">INDIA'S TRUSTED SCRAP PARTNER</div>
+        <h1 class="main-title gsap-fade">
+            Transforming Industrial Scrap<br>
+            <span class="hero-accent">Into Valuable Resources</span>
+        </h1>
+        <p class="hero-sub gsap-fade">We specialise in sourcing, processing and trading of ferrous &amp; non-ferrous scrap — delivering quality, reliability and efficiency at every step of the supply chain.</p>
+        <div class="hero-ctas gsap-fade">
+            <a href="products.html" class="btn-primary">Explore Products</a>
+            <a href="contact.html" class="btn-ghost">Get in Touch</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span></span>
+        <p>Scroll</p>
+    </div>
+</header>
+
+<!-- ======= STATS STRIP ======= -->
+<div class="stats-strip">
+    <div class="stat-item gsap-stat">
+        <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+        <p>Major Clients</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item gsap-stat">
+        <span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span>
+        <p>Product Categories</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item gsap-stat">
+        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+        <p>Reliable Operations</p>
+    </div>
+</div>
+
+<!-- ======= ABOUT ======= -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <div class="about-images gsap-left">
+            <div class="img-stack">
+                <div class="image-box box-1">
+                    <img src="images/About_us_1.jpg" alt="Operations">
+                </div>
+                <div class="image-box box-2">
+                    <img src="images/ABout_us_2.jpg" alt="Scrap">
+                </div>
+                <div class="img-badge">
+                    <span>Est.</span>
+                    <strong>2022</strong>
+                </div>
+            </div>
+        </div>
+        <div class="about-content gsap-right">
+            <div class="section-tag">Who We Are</div>
+            <h2 class="section-title">ABOUT <span class="accent">US</span></h2>
+            <div class="title-bar"></div>
+            <p>Sahyadhri Multitrade Pvt Ltd is a professionally driven organisation specialising in the scrap industry. We deliver end-to-end solutions for the sourcing, handling, grading, and processing of ferrous and non-ferrous scrap materials across India.</p>
+            <p>Though a young company, our team brings deep industry expertise and strong trade networks — enabling us to serve some of India's leading steel manufacturers and industrial enterprises with consistent quality and on-time delivery.</p>
+            <ul class="about-list">
+                <li><i class="fa fa-check-circle"></i> Sourcing and trading of ferrous and non-ferrous scrap materials.</li>
+                <li><i class="fa fa-check-circle"></i> Professional sorting, grading, and processing of scrap.</li>
+                <li><i class="fa fa-check-circle"></i> Integrated scrap supply chain management across India.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ======= DIRECTOR'S THOUGHTS ======= -->
+<section class="dt-section">
+    <div class="dt-container gsap-up">
+        <div class="dt-photo">
+            <img src="images/Service1.jpg" alt="Director">
+            <div class="dt-photo-label">Director</div>
+        </div>
+        <div class="dt-body">
+            <div class="section-tag light">Leadership</div>
+            <h2 class="dt-title">DIRECTOR'S <span class="accent">THOUGHTS</span></h2>
+            <div class="title-bar"></div>
+            <div class="dt-quote-mark">&ldquo;</div>
+            <p class="dt-text">At Sahyadhri Multitrade, we entered the scrap industry with a clear purpose — to bring professionalism, transparency, and reliability to a space that demands all three. In a short time, we have built trusted partnerships with major steel producers across India. Our commitment is simple: deliver the right material, at the right time, every time. That promise is what drives every decision we make.</p>
+            <div class="dt-quote-close-wrap">&rdquo;</div>
+            <p class="dt-name">Mr. Suresh Panmand</p>
+            <p class="dt-designation">Director, Sahyadhri Multitrade Pvt. Ltd.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ======= SERVICES ======= -->
+<section id="services" class="services-section">
+    <div class="services-container">
+        <div class="services-content gsap-left">
+            <div class="section-tag">What We Do</div>
+            <h2 class="section-title">OUR <span class="accent">SERVICES</span></h2>
+            <div class="title-bar"></div>
+            <p>Sahyadhri Multitrade provides comprehensive solutions for the scrap industry — from sourcing and grading to processing and supply chain management.</p>
+            <ul class="services-list">
+                <li>
+                    <div class="svc-icon"><i class="fa fa-recycle"></i></div>
+                    <div>
+                        <strong>Scrap Sourcing &amp; Trading</strong>
+                        <span>Procurement of high-quality ferrous and non-ferrous scrap from domestic and international markets.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="svc-icon"><i class="fa fa-filter"></i></div>
+                    <div>
+                        <strong>Sorting &amp; Grading</strong>
+                        <span>Systematic separation of TMT, ferrous, and non-ferrous scrap to ensure high-quality standards.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="svc-icon"><i class="fa fa-cogs"></i></div>
+                    <div>
+                        <strong>Processing &amp; Preparation</strong>
+                        <span>Cleaning, shredding and material preparation to meet manufacturer specifications.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="services-grid gsap-right">
+            <div class="grid-item"><img src="images/Service1.jpg" alt="Scrap Sourcing"><div class="grid-overlay">Sourcing</div></div>
+            <div class="grid-item"><img src="images/Service2.jpeg" alt="Sorting"><div class="grid-overlay">Sorting</div></div>
+            <div class="grid-item"><img src="images/Service3.jpg" alt="Processing"><div class="grid-overlay">Processing</div></div>
+            <div class="grid-item"><img src="images/Service4.jpg" alt="Supply Chain"><div class="grid-overlay">Supply Chain</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= CLIENTS ======= -->
+<section id="clients" class="clients-section">
+    <div class="clients-inner">
+        <div class="section-tag">Our Network</div>
+        <h2 class="section-title">OUR <span class="accent">CLIENTS</span></h2>
+        <div class="title-bar"></div>
+        <p class="clients-sub">Some of the major clientele served by Sahyadhri Multitrade Pvt. Ltd.</p>
+
+        <div class="slider-wrapper gsap-up">
+            <button class="slider-arrow prev" onclick="moveSlider(-1)">&#10094;</button>
+            <div class="slider-window">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide">
+                        <div class="logo-card"><img src="images/tata_steel.png" alt="Tata Steel"></div>
+                        <div class="logo-card"><img src="images/jsw.png" alt="JSW"></div>
+                        <div class="logo-card"><img src="images/metaroll.png" alt="Metaroll"></div>
+                        <div class="logo-card"><img src="images/kaalika.png" alt="Kaalika"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="logo-card"><img src="images/icon_steel.png" alt="Icon Steel"></div>
+                        <div class="logo-card"><img src="images/srj.png" alt="SRJ"></div>
+                        <div class="logo-card"><img src="images/srmb.png" alt="SRMB"></div>
+                        <div class="logo-card"><img src="images/mukand_bajaj.png" alt="Mukand Bajaj"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="logo-card"><img src="images/sail.png" alt="SAIL"></div>
+                        <div class="logo-card"><img src="images/rimjhim.png" alt="Rimjhim"></div>
+                        <div class="logo-card"><img src="images/gaurdian.png" alt="Guardian"></div>
+                        <div class="logo-card"><img src="images/AMNS.png" alt="AMNS"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="logo-card"><img src="images/bhagwati.png" alt="Bhagwati"></div>
+                        <div class="logo-card"><img src="images/bhagyalaxmi.png" alt="Bhagya Laxmi"></div>
+                        <div class="logo-card"><img src="images/mahindra.png" alt="Mahindra"></div>
+                        <div class="logo-card"><img src="images/saarloha.png" alt="Saarloha"></div>
+                    </div>
+                    <div class="slide">
+                        <div class="logo-card"><img src="images/gajkesari.png" alt="Gajkesari"></div>
+                        <div class="logo-card"><img src="images/bindra.png" alt="Bindra"></div>
+                        <div class="logo-card"><img src="images/meenakshi.png" alt="Meenakshi"></div>
+                        <div class="logo-card"><img src="images/Shyam.png" alt="Shyam"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow next" onclick="moveSlider(1)">&#10095;</button>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- ======= CAREER ======= -->
+<section id="career" class="career-section">
+    <div class="career-bg-img">
+        <img src="images/Career.jpg" alt="Careers">
+    </div>
+    <div class="career-overlay"></div>
+    <div class="career-content gsap-up">
+        <div class="section-tag light">Join Our Team</div>
+        <h2 class="career-title">BUILD YOUR CAREER WITH <span class="accent">SAHYADHRI</span></h2>
+        <div class="title-bar"></div>
+        <p>Be part of a driven team shaping India's scrap industry.</p>
+        <a href="career.html" class="btn-primary">Apply Now</a>
+    </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer-outer-wrapper">
+    <div class="footer-container">
+        <div class="footer-main">
+            <div class="footer-col brand">
+                <div class="brand-header">
+                    <img src="images/sahyadhri.png" alt="Sahyadhri Logo" class="f-logo">
+                    <h2 class="f-title">SAHYADHRI MULTITRADE PVT. LTD.</h2>
+                </div>
+                <p class="f-desc">Trusted name in the scrap industry, providing reliable solutions for scrap sourcing, processing, and integrated supply chain operations across India.</p>
+            </div>
+            <div class="footer-col links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Company</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="career.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h3>Contact Address</h3>
+                <p class="address"><i class="fa fa-location-dot"></i> Office No 115, Plot No 84, Vardhaman Chamber, Wing B, Sector – 17, Vashi, Navi Mumbai – 400703</p>
+                <h3>Contact Person</h3>
+                <div class="contact-persons">
+                    <div class="person">
+                        <p>Mr. Ajay Shirshad</p>
+                        <a href="tel:+918108911104" class="contact-link"><i class="fa fa-phone"></i> +91 81089 11104</a>
+                    </div>
+                    <div class="person">
+                        <p>Mr. Sachin Panmand</p>
+                        <a href="tel:+918108044454" class="contact-link"><i class="fa fa-phone"></i> +91 81080 44454</a>
+                    </div>
+                </div>
+                <a href="mailto:operation@smtpl.net.in" class="email-link"><i class="fa fa-envelope"></i> operation@smtpl.net.in</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyrights © 2026 Sahyadhri Multitrade Pvt. Ltd. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+// ── MOBILE DRAWER ─────────────────────────────────
+var drawer   = document.getElementById('mobileDrawer');
+var backdrop = document.getElementById('drawerBackdrop');
+var burger   = document.getElementById('hamburger');
+var closeBtn = document.getElementById('drawerClose');
+
+burger.addEventListener('click', function() {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+});
+function closeDrawer() {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+}
+closeBtn.addEventListener('click', closeDrawer);
+backdrop.addEventListener('click', closeDrawer);
+drawer.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = this.getAttribute('href');
+        closeDrawer();
+        setTimeout(function() {
+            var el = target === '#' ? document.body : document.querySelector(target);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 300);
+    });
+});
+
+// ── NAVBAR SCROLL ────────────────────────────────
+window.addEventListener('scroll', function() {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── SLIDER ───────────────────────────────────────
+var idx = 0, total = 5;
+function moveSlider(dir) { idx = (idx + dir + total) % total; updateSlider(); }
+function currentSlide(i) { idx = i; updateSlider(); }
+function updateSlider() {
+    document.getElementById('sliderTrack').style.transform = 'translateX(-' + (idx * 100) + '%)';
+    document.querySelectorAll('.dot').forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+}
+
+// ── GSAP ─────────────────────────────────────────
+gsap.registerPlugin(ScrollTrigger);
+
+// Navbar
+gsap.from('#navbar', { y: -80, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.1 });
+
+// Hero
+gsap.from('.hero-content .hero-tag', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.4 });
+gsap.from('.main-title', { y: 60, opacity: 0, duration: 1, ease: 'power4.out', delay: 0.65 });
+gsap.from('.hero-sub', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 1 });
+gsap.from('.hero-ctas', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 1.2 });
+
+// Stats counter
+document.querySelectorAll('.stat-num').forEach(function(el) {
+    var target = parseInt(el.getAttribute('data-target'));
+    var obj = { val: 0 };
+    ScrollTrigger.create({
+        trigger: el, start: 'top 88%', once: true,
+        onEnter: function() {
+            gsap.to(obj, { val: target, duration: 2, ease: 'power2.out',
+                onUpdate: function() { el.textContent = Math.round(obj.val); }
+            });
+        }
+    });
+});
+gsap.from('.gsap-stat', {
+    scrollTrigger: { trigger: '.stats-strip', start: 'top 88%' },
+    y: 40, opacity: 0, duration: 0.7, stagger: 0.12, ease: 'power3.out'
+});
+
+// About
+gsap.from('.gsap-left', {
+    scrollTrigger: { trigger: '.about-section', start: 'top 80%' },
+    x: -70, opacity: 0, duration: 0.9, ease: 'power3.out'
+});
+gsap.from('.gsap-right', {
+    scrollTrigger: { trigger: '.about-section', start: 'top 80%' },
+    x: 70, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.15
+});
+
+// Generic up reveals
+gsap.utils.toArray('.gsap-up').forEach(function(el) {
+    gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%' },
+        y: 60, opacity: 0, duration: 0.85, ease: 'power3.out'
+    });
+});
+
+// Section titles
+gsap.utils.toArray('.section-title, .career-title, .dt-title').forEach(function(el) {
+    gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 88%' },
+        y: 50, opacity: 0, duration: 0.8, ease: 'power3.out'
+    });
+});
+
+// Title bars
+gsap.utils.toArray('.title-bar').forEach(function(el) {
+    gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%' },
+        scaleX: 0, transformOrigin: 'left center', duration: 0.7, ease: 'power3.out'
+    });
+});
+
+// Grid
+gsap.from('.grid-item', {
+    scrollTrigger: { trigger: '.services-grid', start: 'top 82%' },
+    scale: 0.85, opacity: 0, duration: 0.6, ease: 'back.out(1.5)', stagger: 0.1
+});
+
+// Services list
+gsap.from('.services-list li', {
+    scrollTrigger: { trigger: '.services-list', start: 'top 85%' },
+    x: -40, opacity: 0, duration: 0.6, ease: 'power3.out', stagger: 0.12
+});
+
+// Logo cards
+gsap.from('.logo-card', {
+    scrollTrigger: { trigger: '.slider-wrapper', start: 'top 85%' },
+    y: 30, opacity: 0, duration: 0.5, ease: 'power3.out', stagger: 0.08
+});
+
+// Footer
+gsap.from('.footer-container', {
+    scrollTrigger: { trigger: '.footer-outer-wrapper', start: 'top 90%' },
+    y: 40, opacity: 0, duration: 0.8, ease: 'power3.out'
+});
+
+// Hover lift
+document.querySelectorAll('.logo-card, .grid-item, .stat-item').forEach(function(el) {
+    el.addEventListener('mouseenter', function() { gsap.to(el, { y: -6, scale: 1.04, duration: 0.3, ease: 'power2.out' }); });
+    el.addEventListener('mouseleave', function() { gsap.to(el, { y: 0, scale: 1, duration: 0.3, ease: 'power2.out' }); });
+});
+
+// Float buttons pulse
+gsap.from('.float-contact', { x: 80, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 1.5 });
+</script>
+</body>
+</html>
