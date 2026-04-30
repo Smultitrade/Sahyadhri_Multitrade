@@ -282,8 +282,8 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 .product-card {
     background: var(--bg);
@@ -386,8 +386,8 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 
 .why-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
 }
 .why-card {
     background: var(--bg);
@@ -503,8 +503,8 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 ======================== */
 @media (max-width: 992px) {
     .hero-title { font-size: 4.5rem; }
-    .products-grid { grid-template-columns: repeat(2,1fr); }
-    .why-grid { grid-template-columns: repeat(2,1fr); }
+    .products-grid { grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .why-grid { grid-template-columns: repeat(2,1fr); gap: 16px; }
     .expertise-card { flex-direction: column; }
     .exp-img { width: 100%; height: 220px; }
     .exp-text { padding: 26px 26px; }
@@ -556,8 +556,8 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 
     /* Why */
     .why-section { padding: 55px 0; }
-    .why-grid { grid-template-columns: repeat(2,1fr); gap: 12px; }
-    .why-img { height: 140px; }
+    .why-grid { grid-template-columns: repeat(1,1fr); gap: 14px; }
+    .why-img { height: 220px; }
     .why-body h4 { font-size: 1.1rem; }
 
     /* CTA */
@@ -575,7 +575,7 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
     .hero-title { font-size: 2.6rem; }
     .section-heading { font-size: 1.75rem; }
     .product-img { height: 130px; }
-    .why-img { height: 120px; }
+    .why-img { height: 200px; }
     .products-grid { gap: 10px; }
     .why-grid { gap: 10px; }
 }

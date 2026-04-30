@@ -421,7 +421,7 @@ body {
    ABOUT  — white bg
 ======================== */
 .about-section {
-    padding: 100px 6%;
+    padding: 50px 6%;
     background: var(--white);
 }
 
@@ -487,7 +487,7 @@ body {
    DIRECTOR  — light bg2
 ======================== */
 .dt-section {
-    padding: 80px 6%;
+    padding: 50px 6%;
     background: var(--bg2);
     position: relative;
     overflow: hidden;
@@ -581,7 +581,7 @@ body {
    SERVICES  — white bg
 ======================== */
 .services-section {
-    padding: 100px 6%;
+    padding: 50px 6%;
     background: var(--white);
 }
 
@@ -675,7 +675,7 @@ body {
    CLIENTS  — bg2
 ======================== */
 .clients-section {
-    padding: 100px 6%;
+    padding: 50px 6%;
     background: var(--bg2);
 }
 
