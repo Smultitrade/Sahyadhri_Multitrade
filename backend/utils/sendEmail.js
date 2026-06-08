@@ -1,25 +1,21 @@
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-    },
-    tls: {
-        rejectUnauthorized: false
-    }
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // ======= CAREER EMAIL =======
 const sendCareerEmail = async ({ name, email, phone, position, message, resume }) => {
-    const mailOptions = {
-        from: `"Sahyadhri Website" <${process.env.EMAIL_USER}>`,
+
+    const attachments = resume ? [{
+        filename: resume.originalname,
+        content: resume.buffer,
+    }] : [];
+
+    await resend.emails.send({
+        from: 'Sahyadhri Website <onboarding@resend.dev>',
         to: process.env.RECEIVER_EMAIL,
-        replyTo: email,
+        reply_to: email,
         subject: `New Job Application — ${position || 'General'} | Sahyadhri Multitrade`,
+        attachments: attachments,
         html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
                 <div style="background: #0d2137; padding: 24px 32px;">
@@ -55,23 +51,17 @@ const sendCareerEmail = async ({ name, email, phone, position, message, resume }
                     <p style="margin: 0; color: #aaa; font-size: 12px;">Sent from Sahyadhri Multitrade website career form.</p>
                 </div>
             </div>
-        `,
-        attachments: resume ? [{
-            filename: resume.originalname,
-            content: resume.buffer,
-            contentType: resume.mimetype
-        }] : []
-    };
-
-    await transporter.sendMail(mailOptions);
+        `
+    });
 };
 
 // ======= CONTACT EMAIL =======
 const sendContactEmail = async ({ name, phone, email, subject, message }) => {
-    const mailOptions = {
-        from: `"Sahyadhri Website" <${process.env.EMAIL_USER}>`,
+
+    await resend.emails.send({
+        from: 'Sahyadhri Website <onboarding@resend.dev>',
         to: process.env.RECEIVER_EMAIL,
-        replyTo: email,
+        reply_to: email,
         subject: `New Enquiry — ${subject || 'General'} | Sahyadhri Multitrade`,
         html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
@@ -108,9 +98,7 @@ const sendContactEmail = async ({ name, phone, email, subject, message }) => {
                 </div>
             </div>
         `
-    };
-
-    await transporter.sendMail(mailOptions);
+    });
 };
 
 module.exports = { sendCareerEmail, sendContactEmail };
